@@ -1,0 +1,13 @@
+.inset {
+  border: 4px inset #bebebe;
+  box-shadow: 3px 3px 1px #202020;
+}
+
+.outset {
+  border: 2px outset #bebebe;
+  box-shadow: 3px 3px 1px #202020;
+}
+
+.shadow {
+  box-shadow: 3px 3px 1px #202020;
+}

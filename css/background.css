@@ -1,0 +1,19 @@
+.bg {
+  background-image: url("../images/bliss-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#work-template {
+  background-image: url("../images/projects/wagmi/wagmi-web-background.png");
+  background-position: 50% 50%;
+  background-size: 500px;
+}
+#work-template.read-mode {
+  background-image: none;
+  background-color: #f4f4f4;
+}
+
+#container {
+  margin: -20px;
+}

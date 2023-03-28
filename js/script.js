@@ -1,0 +1,64 @@
+function hideBackground() {
+  //background image toggle
+  document.getElementById("work-template").classList.toggle("read-mode");
+
+  //innertext of the button
+  //   var x = document.querySelector("#toggle");
+  //   if (x.innerHTML === "🙈") {
+  //     x.innerHTML = "🐵";
+  //   } else {
+  //     x.innerHTML = "🙈";
+  //   }
+  //document.querySelector('#toggle').textContent = "back on";
+  console.log("hi");
+}
+console.log("aloha");
+
+const tags = {
+  fun: ["wagmi", "slyder-fest", "microbe-psychic"],
+  commercial: ["twitch", "wagmi"],
+};
+
+// const select = document.querySelector("#menuSelect");
+
+// select.addEventListener("change", (event) => {
+//   const userOption = event.target.value;
+//   const blocks = document.querySelectorAll(".menu-block");
+//   blocks.forEach((block) => {
+//     console.log(block.dataset.type);
+//     if (block.dataset.type !== userOption) {
+//       block.style.display = "none";
+//     } else {
+//       block.style.display = "block";
+//     }
+//   });
+// });
+
+//collapsible
+var expand = document.getElementsByClassName("show-section");
+var i;
+
+for (i = 0; i < expand.length; i++) {
+  expand[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//enlarge and shrink text
+var textSize = document.querySelector("p");
+
+function enlargeText() {
+  console.log(textSize);
+  textSize.style.fontSize = "60px";
+}
+
+//draggable
+$(function () {
+  $("#draggable").draggable();
+});

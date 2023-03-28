@@ -1,0 +1,301 @@
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  overflow: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* NAV BAR*/
+
+nav {
+  width: 92vw;
+  height: 60px;
+  padding: 10px 7.5px 10px 7.5px;
+  margin: 10px auto 0 auto;
+  /* position: absolute; */
+}
+
+.nav-buttons,
+.buttons {
+  width: 40px;
+  height: 40px;
+  border: 2px outset #ffffff;
+  margin-right: 3px;
+  padding: 6px;
+  margin-top: -3px;
+  box-shadow: 2px 2px 1px black;
+  cursor: pointer;
+  font-family: NeueBit;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 100%;
+}
+
+nav button:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  border: 2px outset #ffffff;
+  margin-right: 30px;
+}
+
+.nav-buttons img .buttons img {
+  width: 30px;
+}
+
+.nav-logo {
+  background-image: url("../images/profile/white-256.png");
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  float: right;
+  margin: -10px -7.5px;
+  border: 2px inset #bebebe;
+}
+
+.m-hide {
+  display: none;
+}
+/* GENERAL */
+
+.container-browser {
+  width: 92vw;
+  height: calc(96vh - 60px);
+  /* left: 0;
+  top: 60px;
+  position: fixed; */
+  overflow: scroll;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.blue {
+  color: #3d36ff;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bebebe;
+  border: 2px outset #ffffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* HOME PAGE*/
+#enter-button {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: auto;
+  transform: translate(-50%, -50%);
+}
+
+.side-nav {
+  height: 40px;
+  width: 100%;
+}
+
+.side-box {
+  position: absolute;
+  background-color: #fffefe;
+  top: 20%;
+  right: calc(50vw-150px);
+  margin: 30px;
+  width: 300px;
+  max-height: 50vh;
+}
+
+.x {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+}
+
+/* MENU PAGE */
+form {
+  display: flex;
+  height: 3rem;
+  align-items: baseline;
+}
+
+select {
+  margin-left: 10px;
+}
+
+/* INFO PAGE */
+
+#info-profile {
+  width: 5vw;
+  height: 5vw;
+}
+
+/* WORK PAGE*/
+.hero-image {
+  width: calc(100%+40px);
+  max-height: calc(96vh - 60px);
+  margin: -20px -20px 0 -20px;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.section-title {
+  background-color: #ffff32;
+  padding: 2px;
+  margin-top: 20px;
+}
+
+.show-title {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.hide {
+  width: 100%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* NAV */
+  nav {
+    width: 85vw;
+    max-width: 1200px;
+    margin: 2.5vh auto 0;
+    padding: 5px;
+  }
+
+  .nav-logo {
+    margin: -5px;
+  }
+
+  .container-browser {
+    width: 85vw;
+    max-width: 1200px;
+    height: 87vh;
+    margin: 0 auto;
+  }
+
+  .m-hide {
+    display: initial;
+  }
+  .nav-buttons,
+  .buttons {
+    width: 45px;
+    height: 45px;
+    margin-top: 0;
+  }
+
+  .nav-buttons:hover,
+  .buttons:hover {
+    box-shadow: 0px 0px 1px black;
+  }
+
+  nav button:nth-child(3),
+  nav button:nth-child(5) {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* GENERAL */
+
+  .text-container {
+    margin: 20px auto;
+  }
+
+  .side-nav {
+    height: 40px;
+    width: 100%;
+  }
+  .side-box {
+    position: absolute;
+    background-color: #fffefe;
+    top: 30%;
+    right: 60px;
+    min-width: 380px;
+    max-width: 25vw;
+  }
+
+  .x {
+    float: right;
+    width: 32px;
+    height: 32px;
+  }
+
+  /* MENU PAGE */
+  .menu {
+    margin: 30px auto;
+  }
+  .menu-block {
+    max-width: 45%;
+  }
+
+  .section-title {
+    display: inline-block;
+    margin: 0;
+  }
+
+  /* WORK PAGE */
+
+  .text-2-column {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0;
+  }
+  .text-left {
+    grid-column-start: 1;
+    max-width: 300px;
+    float: left;
+  }
+
+  .text-right {
+    grid-column: 2 / span 2;
+    max-width: 750px;
+    border-left: 1px dotted #000;
+    padding-left: 40px;
+  }
+}
