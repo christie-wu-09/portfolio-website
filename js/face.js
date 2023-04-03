@@ -111,11 +111,6 @@ function draw() {
     }
   }
 
-  if (mouseIsPressed) {
-    sayHi.play();
-    console.log("hi");
-  }
-
   console.log(imgSize);
 }
 

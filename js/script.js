@@ -58,6 +58,12 @@ function enlargeText() {
   textSize.style.fontSize = "60px";
 }
 
+//draggable
+$(function () {
+  $("#draggable").draggable();
+  console.log("dragging");
+});
+
 //image carousal
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -81,8 +87,3 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "block";
 }
-
-//draggable
-$(function () {
-  $("#draggable").draggable();
-});

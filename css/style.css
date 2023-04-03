@@ -150,7 +150,7 @@ nav button:nth-child(3) {
 /* HOME PAGE*/
 #enter-button {
   position: absolute;
-  z-index: 10;
+  /* z-index: 10; */
   left: 50%;
   top: 70%;
   width: auto;
@@ -229,7 +229,7 @@ select {
   /* NAV */
   nav {
     width: 85vw;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 2.5vh auto 0;
     padding: 5px;
   }
@@ -240,7 +240,7 @@ select {
 
   .container-browser {
     width: 85vw;
-    max-width: 1200px;
+    max-width: 1800px;
     height: 87vh;
     margin: 0 auto;
   }
