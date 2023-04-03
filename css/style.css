@@ -100,6 +100,31 @@ nav button:nth-child(3) {
 .pad-20 {
   padding: 20px;
 }
+
+/* IMAGE CAROUSAL */
+.carousel-container {
+  width: 50%;
+  position: relative;
+  transform-origin: 50% 50%;
+}
+
+.img-slides {
+  width: calc(100% - 120px);
+  margin: 0 auto;
+}
+
+.arrow-left {
+  position: absolute;
+  top: 47%;
+  left: 0px;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 47%;
+  right: 0px;
+}
+
 /* SCROLL BAR */
 /* width */
 ::-webkit-scrollbar {
@@ -125,6 +150,7 @@ nav button:nth-child(3) {
 /* HOME PAGE*/
 #enter-button {
   position: absolute;
+  z-index: 10;
   left: 50%;
   top: 70%;
   width: auto;

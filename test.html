@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>christiewu.design</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/borders.css" />
+    <link rel="stylesheet" href="css/background.css" />
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body id="work-template">
+    <nav class="home-nav bg-grey work-page outset">
+      <button class="nav-buttons bg-grey">
+        <a href="/info.html">
+          <img src="images/emojis/house.png" />
+        </a>
+      </button>
+      <button class="nav-buttons bg-grey">
+        <a href="/menu.html">
+          <img src="images/emojis/folder.png" />
+        </a>
+      </button>
+      <button class="nav-buttons bg-grey">
+        <a href="/info.html">
+          <img src="images/emojis/info.png" />
+        </a>
+      </button>
+      <button
+        class="nav-buttons bg-grey m-hide"
+        id="bg-toggle"
+        onclick="hideBackground()"
+      >
+        <img src="images/emojis/hide.png" />
+      </button>
+      <button class="nav-buttons bg-grey m-hide" onclick="enlargeText()">
+        <img src="images/emojis/big-A.png" />
+      </button>
+      <button class="nav-buttons bg-grey m-hide" onclick="shrinkText()">
+        <img src="images/emojis/small-A.png" />
+      </button>
+
+      <div class="nav-logo"></div>
+    </nav>
+    <div class="container-browser inset shadow">
+      <div class="carousel-container">
+        <img
+          class="img-slides"
+          src="/images/projects/twitch/Twitch_NA_FebAlwaysOn_cypheroftyr_1x1_022423_V03_VT_Cypheroftyr_1.png"
+        />
+        <img
+          class="img-slides"
+          src="/images/projects/twitch/Twitch_NA_FebAlwaysOn_cypheroftyr_1x1_022423_V03_VT_Cypheroftyr_2.png"
+        />
+        <img
+          class="img-slides"
+          src="/images/projects/twitch/Twitch_NA_FebAlwaysOn_cypheroftyr_1x1_022423_V03_VT_Cypheroftyr_3.png"
+        />
+
+        <button class="buttons bg-grey arrow-left" onclick="plusDivs(-1)">
+          &#10094;
+        </button>
+        <button class="buttons bg-grey arrow-right" onclick="plusDivs(1)">
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
