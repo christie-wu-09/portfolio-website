@@ -225,6 +225,15 @@ select {
   display: none;
 }
 
+.vertical-video {
+  padding: calc(96vh - 40px) 0 0 0;
+  position: relative;
+}
+
+.gallery-3 {
+  display: flex;
+}
+
 @media (min-width: 768px) {
   /* NAV */
   nav {
@@ -323,5 +332,24 @@ select {
     max-width: 750px;
     border-left: 1px dotted #000;
     padding-left: 40px;
+  }
+
+  .vertical-video {
+    padding: 87vh 0 0 0;
+    position: relative;
+  }
+
+  .gallery-3 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* border-top: 1px dotted #000;
+    border-bottom: 1px dotted #000;
+    padding: 10px 0; */
+    padding: 40px;
+  }
+
+  .gallery-3 img {
+    max-width: 30%;
   }
 }

@@ -1,18 +1,26 @@
-function hideBackground() {
-  //background image toggle
-  document.getElementById("work-template").classList.toggle("read-mode");
+// function hideBackground() {
+//   //background image toggle
+//   // document.getElementById("work-template").classList.toggle("read-mode");
+//   document.getElementById("eat-bg").classList.toggle("read-mode");
 
-  //innertext of the button
-  //   var x = document.querySelector("#toggle");
-  //   if (x.innerHTML === "🙈") {
-  //     x.innerHTML = "🐵";
-  //   } else {
-  //     x.innerHTML = "🙈";
-  //   }
-  //document.querySelector('#toggle').textContent = "back on";
-  console.log("hi");
+//   //innertext of the button
+//   //   var x = document.querySelector("#toggle");
+//   //   if (x.innerHTML === "🙈") {
+//   //     x.innerHTML = "🐵";
+//   //   } else {
+//   //     x.innerHTML = "🙈";
+//   //   }
+//   //document.querySelector('#toggle').textContent = "back on";
+//   console.log("hi");
+// }
+
+function noBackground() {
+  const backgrounds = document.getElementsByClassName("page-bg");
+  for (let i = 0; i < backgrounds.length; i++) {
+    backgrounds[i].classList.toggle("read-mode");
+    console.log("background");
+  }
 }
-console.log("aloha");
 
 const tags = {
   fun: ["wagmi", "slyder-fest", "microbe-psychic"],

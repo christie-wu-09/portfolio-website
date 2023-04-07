@@ -1,5 +1,5 @@
 .bg {
-  background-image: url("../images/bliss-background.jpeg");
+  background-image: url("../images/px-bliss.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -9,12 +9,24 @@
   background-position: 50% 50%;
   background-size: 500px;
 }
-#work-template.read-mode {
+
+#eat-bg {
+  background-image: url("../images/projects/allUCanEat/food-bg.gif");
+  background-position: 50% 70%;
+  background-size: 300px;
+}
+
+#work-template.read-mode,
+#eat-bg.read-mode {
+  background-image: none;
+  background-color: #f4f4f4;
+}
+
+.page-bg.read-mode {
   background-image: none;
   background-color: #f4f4f4;
 }
 
 #container {
   margin: -20px;
-  background-image: url("/images/Screen\ Shot\ 2023-03-19\ at\ 13.50.27.png");
 }

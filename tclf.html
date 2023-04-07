@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>christiewu.design</title>
+    <link rel="icon" type="image/x-icon" href="/images/face-favicon.png" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/borders.css" />
+    <link rel="stylesheet" href="css/background.css" />
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="page-bg">
+    <nav class="home-nav bg-grey work-page outset">
+      <button class="nav-buttons bg-grey">
+        <a href="/index.html">
+          <img src="images/emojis/house.png" />
+        </a>
+      </button>
+      <button class="nav-buttons bg-grey">
+        <a href="/menu.html">
+          <img src="images/emojis/folder.png" />
+        </a>
+      </button>
+      <button class="nav-buttons bg-grey">
+        <a href="/info.html">
+          <img src="images/emojis/info.png" />
+        </a>
+      </button>
+      <button
+        class="nav-buttons bg-grey m-hide"
+        id="bg-toggle"
+        onclick="hideBackground()"
+      >
+        <img src="images/emojis/hide.png" />
+      </button>
+      <button class="nav-buttons bg-grey m-hide" onclick="enlargeText()">
+        <img src="images/emojis/big-A.png" />
+      </button>
+      <button class="nav-buttons bg-grey m-hide" onclick="shrinkText()">
+        <img src="images/emojis/small-A.png" />
+      </button>
+
+      <div class="nav-logo"></div>
+    </nav>
+    <div class="container-browser inset shadow">
+      <div class="hero-image">
+        <img src="/images/projects/tclf/tclf-thumbnail.gif" />
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <h1>2019</h1>
+          <h2 class="m-hide">
+            Brand Identity, Identity System, Generative Design, Web Design
+          </h2>
+        </div>
+        <div class="text-right">
+          <h1 class="title">The Cultural Landscape Foundation</h1>
+
+          <h3 class="section-title">Goal</h3>
+          <p>
+            The current identity of The Cultural Landscape Foundation is not
+            very distinguishable among their competitors and often
+            unrecognizable on digital platforms. The goal of the project is to
+            create a new identity system that represents the mission of the
+            organization.
+          </p>
+          <h3 class="section-title">Overview</h3>
+          <p>
+            The Cultural Landscape Foundation (TCLF) exists to educates and
+            engages the public to make our shared landscape heritage more
+            visible, identify its value, and empower its stewards. The redesign
+            represents the visual attributes of the cultural landscape, and the
+            geometric nature of the visual system allows flexibility,
+            adaptability and variety.
+          </p>
+          <span
+            >*Cultural Landscapes are landscapes that have been affected,
+            influenced, or shaped by human involvement.</span
+          >
+        </div>
+      </div>
+
+      <div class="image-bleed">
+        <img src="/images/projects/tclf/fpo-01.png" />
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <p><b>The Typescape System</b></p>
+        </div>
+        <div class="text-right">
+          <p>
+            Using the alphabetic system to construct the topographic view of the
+            landscape by assigning each letter to a shape. When the words are
+            typed out, they will be translated into an image. Here, the
+            topographic view formed by text is referred as Typescape and
+            individual letters are Typescape Letters. Ideally, the system can be
+            built as a program to produce different topographic views determined
+            by input text.
+            <br />
+          </p>
+          <img src="/images/projects/tclf/tclf-vis-01.jpeg" />
+          <p>
+            TCLF logo configuration, using the abbreviation TCLF in Typescape
+            letters.
+          </p>
+          <img src="/images/projects/tclf/tclf-vis-02.jpeg" />
+          <p>
+            Logo configurations for their programs, typeface and color palette.
+          </p>
+          <img src="/images/projects/tclf/tclf-vis-03.jpeg" />
+          <img src="/images/projects/tclf/tclf-vis-04.jpeg" />
+        </div>
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <p><b>Implementation</b></p>
+        </div>
+        <div class="text-right">
+          <img src="/images/projects/tclf/tclf-implementation-01.jpeg" />
+          <img src="/images/projects/tclf/tclf-implementation-02.jpeg" />
+          <img src="/images/projects/tclf/tclf-implementation-03.jpeg" />
+        </div>
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <p><b>Web Design</b></p>
+        </div>
+        <div class="text-right">
+          <p>
+            The current site lacks visual consistency and an efficient
+            information architecture. Therefore, a new website is designed with
+            the new identity system and aims to reorganize its original
+            structure
+          </p>
+        </div>
+      </div>
+      <div class="image-bleed">
+        <img src="/images/projects/tclf/tclf-implementation-04-dardbg.png" />
+      </div>
+      <div style="padding: 59.41% 0 0 0; position: relative">
+        <iframe
+          src="https://player.vimeo.com/video/400065603?h=6c77c3cb8e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+          title="TCLF-webpage"
+        ></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+      <!-- <div class="show-section">
+        <div class="show-title">
+          <h1>design proceses...</h1>
+          <button class="buttons bg-grey" type="button">
+            <img class="expand" src="images/down.png" />
+          </button>
+        </div>
+      </div>
+      <div class="hide">
+        <div class="text-2-column">
+          <div class="text-right">
+            <h3 class="section-title">Design Process</h3>
+            <ol class="number-list">
+              <li>Game Design Research</li>
+              <li>Topic Research</li>
+              <li>Prototyping</li>
+              <li>Design and Iterations</li>
+              <li>Usability Testing</li>
+            </ol>
+            <p>
+              <span class="blue">Game Design Research:</span> Research games
+              that explore the question of value and art-making.<br />
+              <span class="blue">Topic Research:</span><br />
+              - Identify issues and implications of NFT technology.<br />
+              - Interview experts and artists to understand their experiences
+              with NFT. <br />
+              - Consult a lawyer around issues of NFT. <br />
+              - Analyze and conduct visual studies on NFT art and the NFT art
+              platform.
+            </p>
+          </div>
+        </div>
+        <div class="text-2-column">
+          <div class="text-right">
+            <p>
+              <span>
+                Special thanks to Thesis AdviserTim Durfee, Co-Advisers Anne
+                Burdick and Elise Co, Thesis Writing Advisor Sam Creely, Thesis
+                Writing Co-Advisor Elizabeth Chin, Media Artist David Leonard,
+                Legal Consultant Michelle Katz, Production Assistant Kuan-YA Wu,
+                Playtesters Elaine Purnama, Melody Ling, Mavis Cao, Qi Tan, Kate
+                Ladenheim. Copyright © 2022 WAGMI TO THE MOON</span
+              >
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
