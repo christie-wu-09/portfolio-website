@@ -30,3 +30,11 @@
 #container {
   margin: -20px;
 }
+
+.test-bg {
+  background-image: url("/images/bliss-background.jpeg");
+}
+
+.no-bg {
+  background-image: none;
+}

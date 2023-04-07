@@ -1,6 +1,6 @@
 // function hideBackground() {
 //   //background image toggle
-//   // document.getElementById("work-template").classList.toggle("read-mode");
+//   document.getElementById("work-template").classList.toggle("read-mode");
 //   document.getElementById("eat-bg").classList.toggle("read-mode");
 
 //   //innertext of the button
@@ -15,11 +15,7 @@
 // }
 
 function noBackground() {
-  const backgrounds = document.getElementsByClassName("page-bg");
-  for (let i = 0; i < backgrounds.length; i++) {
-    backgrounds[i].classList.toggle("read-mode");
-    console.log("background");
-  }
+  document.body.classList.toggle("no-bg");
 }
 
 const tags = {
@@ -57,6 +53,8 @@ for (i = 0; i < expand.length; i++) {
     }
   });
 }
+
+//close the window
 
 //enlarge and shrink text
 var textSize = document.querySelector("p");
