@@ -66,59 +66,19 @@ function draw() {
   // cam.tilt(imgTilt);
 
   if (m_x === mouseX && m_y === mouseY) {
-    m_x = mouseX;
-    m_y = mouseY;
-
-    translate(width / 2 - mouseX * 0.2, height / 2 - mouseY * 0.2);
-
-    imgSize = mouseX / 10;
-
-    if (mouseX > windowWidth - 10) {
-      imgSize = (windowWidth - 10) / 10;
-    }
-
-    if (mouseX < 10) {
-      imgSize = 10;
-    }
-
-    gridX = windowWidth / 10;
-    gridY = windowHeight / 10;
-
-    for (let i = 0; i < gridX; i++) {
-      for (let j = 0; j < gridY; j++) {
-        image(
-          img1,
-          imgX + i * (imgSize + 20),
-          imgY + j * (imgSize + 20),
-          imgSize,
-          imgSize
-        );
-        image(
-          img1,
-          imgX - i * (imgSize + 20),
-          imgY - j * (imgSize + 20),
-          imgSize,
-          imgSize
-        );
-        image(
-          img1,
-          imgX + i * (imgSize + 20),
-          imgY - j * (imgSize + 20),
-          imgSize,
-          imgSize
-        );
-        image(
-          img1,
-          imgX - i * (imgSize + 20),
-          imgY + j * (imgSize + 20),
-          imgSize,
-          imgSize
-        );
-      }
-    }
+    drawFaces();
     return; //return: exit the function
   }
 
+  drawFaces();
+  console.log(imgSize);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function drawFaces() {
   m_x = mouseX;
   m_y = mouseY;
 
@@ -169,10 +129,4 @@ function draw() {
       );
     }
   }
-
-  console.log(imgSize);
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
