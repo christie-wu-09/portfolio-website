@@ -11,7 +11,7 @@ let sayHi;
 let randomS;
 
 function preload() {
-  img1 = loadImage("images/babyspinach-face.png");
+  img1 = loadImage("images/babyspinach-face.jpg");
   //   img2 = loadImage("images/zoom-spinach.gif");
   //   sayHi = loadSound("images/Hi!!!!.m4a");
 }

@@ -4,16 +4,10 @@
   background-repeat: no-repeat;
 }
 
-#work-template {
+.work-template {
   background-image: url("../images/projects/wagmi/wagmi-web-background.png");
   background-position: 50% 50%;
   background-size: 500px;
-}
-
-#eat-bg {
-  background-image: url("../images/projects/allUCanEat/food-bg.gif");
-  background-position: 50% 70%;
-  background-size: 300px;
 }
 
 #work-template.read-mode,
@@ -33,6 +27,12 @@
 
 .test-bg {
   background-image: url("/images/bliss-background.jpeg");
+}
+
+.all-u-can-eat-bg {
+  background-image: url("../images/projects/allUCanEat/food-bg.gif");
+  background-position: 50% 70%;
+  background-size: 300px;
 }
 
 .no-bg {
