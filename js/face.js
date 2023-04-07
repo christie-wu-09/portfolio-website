@@ -9,6 +9,8 @@ let value = 0;
 let imgTilt = 0;
 let sayHi;
 let randomS;
+let m_x = 0;
+let m_y = 0;
 
 function preload() {
   img1 = loadImage("images/babyspinach-face.jpg");
@@ -34,7 +36,7 @@ function setup() {
   imgX = 0;
   imgY = 0;
 
-  frameRate(60);
+  frameRate(30);
 
   img2Width = windowWidth / 3;
   img2Height = img2Width * 0.568;
@@ -62,6 +64,63 @@ function draw() {
   // let imgTilt = map(mouseY, 0, height, -0.2, 0.2);
   // // pan camera according to angle 'delta'
   // cam.tilt(imgTilt);
+
+  if (m_x === mouseX && m_y === mouseY) {
+    m_x = mouseX;
+    m_y = mouseY;
+
+    translate(width / 2 - mouseX * 0.2, height / 2 - mouseY * 0.2);
+
+    imgSize = mouseX / 10;
+
+    if (mouseX > windowWidth - 10) {
+      imgSize = (windowWidth - 10) / 10;
+    }
+
+    if (mouseX < 10) {
+      imgSize = 10;
+    }
+
+    gridX = windowWidth / 10;
+    gridY = windowHeight / 10;
+
+    for (let i = 0; i < gridX; i++) {
+      for (let j = 0; j < gridY; j++) {
+        image(
+          img1,
+          imgX + i * (imgSize + 20),
+          imgY + j * (imgSize + 20),
+          imgSize,
+          imgSize
+        );
+        image(
+          img1,
+          imgX - i * (imgSize + 20),
+          imgY - j * (imgSize + 20),
+          imgSize,
+          imgSize
+        );
+        image(
+          img1,
+          imgX + i * (imgSize + 20),
+          imgY - j * (imgSize + 20),
+          imgSize,
+          imgSize
+        );
+        image(
+          img1,
+          imgX - i * (imgSize + 20),
+          imgY + j * (imgSize + 20),
+          imgSize,
+          imgSize
+        );
+      }
+    }
+    return; //return: exit the function
+  }
+
+  m_x = mouseX;
+  m_y = mouseY;
 
   translate(width / 2 - mouseX * 0.2, height / 2 - mouseY * 0.2);
 

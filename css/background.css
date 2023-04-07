@@ -10,17 +10,6 @@
   background-size: 500px;
 }
 
-#work-template.read-mode,
-#eat-bg.read-mode {
-  background-image: none;
-  background-color: #f4f4f4;
-}
-
-.page-bg.read-mode {
-  background-image: none;
-  background-color: #f4f4f4;
-}
-
 #container {
   margin: -20px;
 }
