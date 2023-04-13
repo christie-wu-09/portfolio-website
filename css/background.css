@@ -18,10 +18,28 @@
   background-image: url("/images/bliss-background.jpeg");
 }
 
+.sampler-bg {
+  background-image: url("../images/projects/sampler/Pattern-collage-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .all-u-can-eat-bg {
   background-image: url("../images/projects/allUCanEat/food-bg.gif");
   background-position: 50% 70%;
   background-size: 300px;
+}
+
+.welcome-to-slyder-festival-bg {
+  background-image: url("../images/projects/slyder-fest/slyder-invite.jpeg");
+  background-position: 50% 70%;
+  background-size: 800px;
+}
+
+.microbe-psychic-bg {
+  background-image: url("../images/projects/microbepsychic/microbe\ patterns_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .no-bg {

@@ -64,7 +64,7 @@
   }
   .w-lg-75 {
     width: 75%;
-    margin: 30px auto;
+    margin: 0 auto;
   }
 
   .flex-container > [class^="w-lg"]:first-child > .segment {

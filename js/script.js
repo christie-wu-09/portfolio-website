@@ -54,21 +54,24 @@ for (i = 0; i < expand.length; i++) {
   });
 }
 
-//close the window
-
 //enlarge and shrink text
-var textSize = document.querySelector("p");
+const allParagraphEl = document.querySelectorAll("p");
 
 function enlargeText() {
-  console.log(textSize);
-  textSize.style.fontSize = "60px";
+  allParagraphEl.forEach((el) => {
+    var style = window.getComputedStyle(el, null).getPropertyValue("font-size");
+    var fontSize = parseFloat(style) * 1.1;
+    el.style.fontSize = fontSize + "px";
+  });
 }
 
-//draggable
-$(function () {
-  $("#draggable").draggable();
-  console.log("dragging");
-});
+function shrinkText() {
+  allParagraphEl.forEach((el) => {
+    var style = window.getComputedStyle(el, null).getPropertyValue("font-size");
+    var fontSize = parseFloat(style) / 1.1;
+    el.style.fontSize = fontSize + "px";
+  });
+}
 
 //image carousal
 var slideIndex = 1;

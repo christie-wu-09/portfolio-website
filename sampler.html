@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>christiewu.design</title>
+    <link rel="icon" type="image/x-icon" href="/images/face-favicon.png" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+    <link rel="stylesheet" href="css/borders.css" />
+    <link rel="stylesheet" href="css/background.css" />
+
+    <script src="js/script.js" defer></script>
+  </head>
+  <body class="sampler-bg">
+    <nav class="home-nav bg-grey work-page outset">
+      <button class="nav-buttons bg-grey">
+        <a href="/index.html">
+          <img src="images/emojis/house.png" />
+        </a>
+      </button>
+      <button class="nav-buttons bg-grey">
+        <a href="/menu.html">
+          <img src="images/emojis/folder.png" />
+        </a>
+      </button>
+      <button class="nav-buttons bg-grey">
+        <a href="/info.html">
+          <img src="images/emojis/info.png" />
+        </a>
+      </button>
+      <button
+        class="nav-buttons bg-grey m-hide"
+        id="bg-toggle"
+        onclick="noBackground()"
+      >
+        <img src="images/emojis/hide.png" />
+      </button>
+      <button class="nav-buttons bg-grey m-hide" onclick="enlargeText()">
+        <img src="images/emojis/big-A.png" />
+      </button>
+      <button class="nav-buttons bg-grey m-hide" onclick="shrinkText()">
+        <img src="images/emojis/small-A.png" />
+      </button>
+
+      <div class="nav-logo"></div>
+    </nav>
+    <div class="container-browser inset shadow">
+      <div class="hero-image">
+        <img src="/images/projects/sampler/sampler-thumbnail.gif" />
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <h1>2021</h1>
+          <h2 class="m-hide">
+            Design Research, Interactive Web Experiences, Creative Coding
+          </h2>
+        </div>
+        <div class="text-right">
+          <h1 class="title">SAMPLER 2</h1>
+
+          <h3 class="section-title">Overview</h3>
+          <p>
+            Sampler2 is collection of mini projects about digital materials
+            based on the research questions proposed by ArtCenter Media Design
+            Practices faculty Elise Co.
+          </p>
+          <h3 class="section-title">Major Research Questions</h3>
+          <ol>
+            <li>
+              What is the digital material applied to? What’s the relationship
+              between the material and the form/object that it forms?
+            </li>
+            <li>
+              What is the relationship between “materiality” and “digital” or
+              “physical”? Not everything digital is a material–or is it? What is
+              the relationship between digital media and simulation of factors
+              from the physical world that makes something feel “real” or
+              “material”?
+            </li>
+            <li>
+              Hypothesis: “attention” is a fundamental force upon digital
+              materials in an information- and media- base society. How can we
+              engage with this force explicitly in forms?
+            </li>
+          </ol>
+          <p>
+            The four projects included:
+            <i
+              >The Material Loop, Dioramas, Material and the Body, and Attention
+              as a Material Force</i
+            >. You can find full documentation
+            <a
+              href="https://docs.google.com/presentation/d/1vGQqaUhRHN7I7SJ3AK3FIKrB3Kw4rvbm4I4LNv78QTQ/edit?usp=sharing"
+              class="buttons bg-grey"
+              >HERE</a
+            >.
+          </p>
+          <span
+            >I worked on The Material Loop and Dioramas, and here is the work I
+            did for both projects.</span
+          >
+        </div>
+      </div>
+
+      <div class="image-bleed">
+        <img src="/images/projects/sampler/fpo-01.png" />
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <p><b>The Material Loop</b></p>
+        </div>
+        <div class="text-right">
+          <p>
+            The Material Loop is a web catalog for users to interact with,
+            browse through, and experience digital materials. My Contribution:
+          </p>
+          <ol>
+            <li>Generated digital materials</li>
+            <li>Created wireframes and user flows</li>
+            <li>Co-designed and co-developed the website</li>
+          </ol>
+          <p>
+            The work is led by Elise and done in collaboration with Mavis,
+            Isabelle and Martin. Watch a video of Material Loop ⬇️ or you can
+            enter
+            <a
+              href="https://eliseco.github.io/sampler2_webcatalog/"
+              class="buttons bg-grey"
+              ><nobr>The Loop</nobr></a
+            >.
+          </p>
+        </div>
+      </div>
+      <div style="padding: 62.5% 0 0 0; position: relative">
+        <iframe
+          src="https://player.vimeo.com/video/669215810?h=96cb7981b1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+          title="material loop.mov"
+        ></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+      <div class="text-2-column">
+        <div class="text-left">
+          <p><b>Pattern Generators</b></p>
+        </div>
+        <div class="text-right">
+          <p>
+            We also build pattern generators with p5.js and OpenGL. Below are
+            the results of our experimentation.
+          </p>
+
+          <img src="/images/projects/sampler/pattern-generator-01.png" />
+          <p class="caption">Pattern generated by pattern generator 01</p>
+          <img src="/images/projects/sampler/pattern-generator-02.png" />
+          <p class="caption">Pattern generated by pattern generator 02</p>
+          <img src="/images/projects/sampler/pattern-generator-03.png" />
+          <p class="caption">Pattern generated by pattern generator 03</p>
+          <img src="/images/projects/sampler/pattern-generator-04.gif" />
+          <p class="caption">Pattern generated by OpenGl</p>
+        </div>
+      </div>
+      <div class="text-2-column">
+        <div class="text-left">
+          <p><b>Dioramas</b></p>
+        </div>
+        <div class="text-right">
+          <p>
+            Digital dioramas allow the users to curate, play, and interact with
+            digital materials through simulations. My Contribution:
+          </p>
+          <ol>
+            <li>
+              Experimented with digital materials with p5.js, Blender and Unity
+            </li>
+            <li>Created 3D models in Blender</li>
+            <li>Designed and coded Diorama 3 with Three.js</li>
+            <li>Co-developed user flows and interactions</li>
+          </ol>
+          <p>
+            Diorama 3: Floating Islands is designed by me and executed by me,
+            Nanyi and Elise. Watch a video of Floating Island or turn on your
+            webcam and play with
+            <a
+              href="https://eliseco.github.io/sampler2_dioramas/diorama_islands/index.html"
+              class="buttons bg-grey"
+              >diorama</a
+            >
+          </p>
+        </div>
+      </div>
+      <div style="padding: 62.5% 0 0 0; position: relative">
+        <iframe
+          src="https://player.vimeo.com/video/669235820?h=0b6acf5581&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+          title="diorama-official"
+        ></iframe>
+      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
+      <!-- <div class="show-section">
+        <div class="show-title">
+          <h1>design proceses...</h1>
+          <button class="buttons bg-grey" type="button">
+            <img class="expand" src="images/down.png" />
+          </button>
+        </div>
+      </div>
+      <div class="hide">
+        <div class="text-2-column">
+          <div class="text-right">
+            <h3 class="section-title">Design Process</h3>
+            <ol class="number-list">
+              <li>Game Design Research</li>
+              <li>Topic Research</li>
+              <li>Prototyping</li>
+              <li>Design and Iterations</li>
+              <li>Usability Testing</li>
+            </ol>
+            <p>
+              <span class="blue">Game Design Research:</span> Research games
+              that explore the question of value and art-making.<br />
+              <span class="blue">Topic Research:</span><br />
+              - Identify issues and implications of NFT technology.<br />
+              - Interview experts and artists to understand their experiences
+              with NFT. <br />
+              - Consult a lawyer around issues of NFT. <br />
+              - Analyze and conduct visual studies on NFT art and the NFT art
+              platform.
+            </p>
+          </div>
+        </div>
+        <div class="text-2-column">
+          <div class="text-right">
+            <p>
+              <span>
+                Special thanks to Thesis AdviserTim Durfee, Co-Advisers Anne
+                Burdick and Elise Co, Thesis Writing Advisor Sam Creely, Thesis
+                Writing Co-Advisor Elizabeth Chin, Media Artist David Leonard,
+                Legal Consultant Michelle Katz, Production Assistant Kuan-YA Wu,
+                Playtesters Elaine Purnama, Melody Ling, Mavis Cao, Qi Tan, Kate
+                Ladenheim. Copyright © 2022 WAGMI TO THE MOON</span
+              >
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>

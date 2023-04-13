@@ -16,14 +16,6 @@
     <link rel="stylesheet" href="css/typography.css" />
     <link rel="stylesheet" href="css/borders.css" />
     <link rel="stylesheet" href="css/background.css" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/script.js" defer></script>
-
-    <script src="js/p5.min.js"></script>
-    <!-- <script src="js/p5.sound.min.js"></script> -->
-    <script src="js/face.js"></script>
   </head>
   <body class="bg">
     <nav class="home-nav bg-grey outset">
@@ -45,26 +37,71 @@
       <div class="nav-logo"></div>
     </nav>
     <div class="container-browser inset">
-      <div id="container"></div>
-      <div class="text-container w-md-66">
+      <!-- <div id="container"></div> -->
+      <div class="text-container w-md-66" id="container">
         <a href="coming-soon.html" class="buttons bg-grey" id="enter-button"
           ><h4>Enter</h4></a
         >
       </div>
     </div>
-    <div class="side-box" id="draggable">
+    <div class="side-box draggable" id="draggable">
       <div class="side-nav outset bg-grey">
-        <button class="buttons x bg-grey close">
+        <button id="closeThis" class="buttons x bg-grey">
           <img src="images/emojis/X.png" />
         </button>
       </div>
-      <div class="inset pad-20">
+      <div class="inset pad-20" id="remove">
         <h4>
-          Hi 👋 I am Christie. I am a Multidisciplinary Designer who creates
-          immersive experiences and dynamic visual stories with creative
-          technology.
+          Helloooooo! <br />
+          I am Christie. I am <s>visual</s> <s>interaction</s> <s>web</s>
+          <s>media</s> <s>multidisciplinary</s> just a designer.<span
+            class="blink"
+          >
+            |</span
+          >
         </h4>
       </div>
     </div>
+
+    <div class="side-box-02 draggable m-hide" id="draggable">
+      <div class="side-nav outset bg-grey">
+        <button id="closeThis" class="buttons x bg-grey">
+          <img src="images/emojis/X.png" />
+        </button>
+      </div>
+      <div class="inset pad-20 bg-light-blue" id="remove">
+        <h4 class="txt-light">
+          ⚠️ WARNING ⚠️<br />This site contains a lot of interactive animated
+          graphics that may cause motion sickness
+        </h4>
+      </div>
+    </div>
+
+    <div class="side-box-03 draggable m-hide" id="draggable">
+      <div class="side-nav outset bg-grey">
+        <button id="closeThis" class="buttons x bg-grey">
+          <img src="images/emojis/X.png" />
+        </button>
+      </div>
+      <div class="inset pad-20" id="remove">
+        <img src="images/profile/yelp.png" />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="js/p5.min.js"></script>
+    <!-- <script src="js/p5.sound.min.js"></script> -->
+    <script src="js/face.js"></script>
+
+    <script>
+      //draggable
+      $(function () {
+        $(".draggable").draggable();
+        console.log("dragging");
+      });
+    </script>
   </body>
 </html>

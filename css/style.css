@@ -101,9 +101,13 @@ nav button:nth-child(3) {
   padding: 20px;
 }
 
+#remove {
+  display: block;
+}
+
 /* IMAGE CAROUSAL */
 .carousel-container {
-  width: 50%;
+  width: 100%;
   position: relative;
   transform-origin: 50% 50%;
 }
@@ -165,7 +169,7 @@ nav button:nth-child(3) {
 .side-box {
   position: absolute;
   background-color: #fffefe;
-  top: 20%;
+  top: 15%;
   right: calc(50vw-150px);
   margin: 30px;
   width: 300px;
@@ -177,6 +181,17 @@ nav button:nth-child(3) {
   width: 30px;
   height: 30px;
   margin: 2px;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+  color: black;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 /* MENU PAGE */
@@ -200,7 +215,6 @@ select {
 /* WORK PAGE*/
 .hero-image {
   width: calc(100%+40px);
-  max-height: calc(96vh - 60px);
   margin: -20px -20px 0 -20px;
 }
 
@@ -230,8 +244,22 @@ select {
   position: relative;
 }
 
+.gallery-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gallery-2 img {
+  width: 49%;
+}
+
 .gallery-3 {
   display: flex;
+}
+
+.image-bleed {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -257,6 +285,7 @@ select {
   .m-hide {
     display: initial;
   }
+
   .nav-buttons,
   .buttons {
     width: 45px;
@@ -281,6 +310,7 @@ select {
     margin: 20px auto;
   }
 
+  /* INDEX PAGE*/
   .side-nav {
     height: 40px;
     width: 100%;
@@ -289,15 +319,33 @@ select {
     position: absolute;
     background-color: #fffefe;
     top: 30%;
-    right: 60px;
-    min-width: 380px;
-    max-width: 25vw;
+    right: 5%;
+    min-width: 200px;
+    max-width: 20vw;
   }
 
   .x {
     float: right;
     width: 32px;
     height: 32px;
+  }
+
+  .side-box-02 {
+    position: absolute;
+    background-color: #fffefe;
+    top: 10%;
+    right: 15%;
+    min-width: 200px;
+    max-width: 20vw;
+  }
+
+  .side-box-03 {
+    position: absolute;
+    background-color: #fffefe;
+    top: 50%;
+    left: 15%;
+    min-width: 300px;
+    max-width: 20vw;
   }
 
   /* MENU PAGE */
