@@ -24,10 +24,16 @@
   background-repeat: no-repeat;
 }
 
-.all-u-can-eat-bg {
+.all-u-ca-eat-bg {
   background-image: url("../images/projects/allUCanEat/food-bg.gif");
   background-position: 50% 70%;
-  background-size: 300px;
+  background-size: 200px;
+}
+
+.twitch-bg {
+  background-image: url("../images/projects/twitch/glitch\ animation\ square.gif");
+  background-position: 50% 70%;
+  background-size: 90px;
 }
 
 .welcome-to-slyder-festival-bg {
@@ -38,6 +44,12 @@
 
 .microbe-psychic-bg {
   background-image: url("../images/projects/microbepsychic/microbe\ patterns_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tclf-bg {
+  background-image: url("../images/projects/tclf/tclf-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

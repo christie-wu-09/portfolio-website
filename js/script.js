@@ -18,25 +18,26 @@ function noBackground() {
   document.body.classList.toggle("no-bg");
 }
 
-const tags = {
-  fun: ["wagmi", "slyder-fest", "microbe-psychic"],
-  commercial: ["twitch", "wagmi"],
-};
+//menu select
+// const tags = {
+//   fun: ["wagmi", "slyder-fest", "microbe-psychic"],
+//   commercial: ["twitch", "wagmi"],
+// };
 
-// const select = document.querySelector("#menuSelect");
+const select = document.querySelector("#menuSelect");
 
-// select.addEventListener("change", (event) => {
-//   const userOption = event.target.value;
-//   const blocks = document.querySelectorAll(".menu-block");
-//   blocks.forEach((block) => {
-//     console.log(block.dataset.type);
-//     if (block.dataset.type !== userOption) {
-//       block.style.display = "none";
-//     } else {
-//       block.style.display = "block";
-//     }
-//   });
-// });
+select.addEventListener("change", (event) => {
+  const userOption = event.target.value;
+  const blocks = document.querySelectorAll(".menu-block");
+  blocks.forEach((block) => {
+    console.log(block.dataset.type);
+    if (block.dataset.type !== userOption) {
+      block.style.display = "none";
+    } else {
+      block.style.display = "block";
+    }
+  });
+});
 
 //collapsible
 var expand = document.getElementsByClassName("show-section");
@@ -82,17 +83,18 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
+  console.log(slideIndex);
   var i;
-  var x = document.getElementsByClassName("img-slides");
-  if (n > x.length) {
+  var imgSlides = document.getElementsByClassName("img-slides");
+  if (n > imgSlides.length) {
     slideIndex = 1;
-    console.log("image-slides");
   }
   if (n < 1) {
-    slideIndex = x.length;
+    slideIndex = imgSlides.length;
   }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  for (i = 0; i < imgSlides.length; i++) {
+    imgSlides[i].style.display = "none";
   }
-  x[slideIndex - 1].style.display = "block";
+  console.log(slideIndex);
+  imgSlides[slideIndex - 1].style.display = "block";
 }

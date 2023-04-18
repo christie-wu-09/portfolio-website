@@ -194,7 +194,38 @@ nav button:nth-child(3) {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
 /* MENU PAGE */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-block {
+  display: inline-block;
+}
+
+.menu-block h4 {
+  margin: 0;
+}
+
+.menu-block img {
+  height: 35vh;
+}
+
 form {
   display: flex;
   height: 3rem;
@@ -203,6 +234,11 @@ form {
 
 select {
   margin-left: 10px;
+  font-size: 16px;
+}
+
+option {
+  font-size: 16px;
 }
 
 /* INFO PAGE */
