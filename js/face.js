@@ -20,7 +20,7 @@ function preload() {
 
 function setup() {
   cont = select("#container");
-  // console.log(cont);
+  console.log(cont);
   let cvs = createCanvas(windowWidth, windowHeight);
   // let cvs = createCanvas(windowWidth, windowHeight, WEBGL);
   cvs.parent(cont);

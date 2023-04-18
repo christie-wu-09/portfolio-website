@@ -24,21 +24,6 @@ function noBackground() {
 //   commercial: ["twitch", "wagmi"],
 // };
 
-const select = document.querySelector("#menuSelect");
-
-select.addEventListener("change", (event) => {
-  const userOption = event.target.value;
-  const blocks = document.querySelectorAll(".menu-block");
-  blocks.forEach((block) => {
-    console.log(block.dataset.type);
-    if (block.dataset.type !== userOption) {
-      block.style.display = "none";
-    } else {
-      block.style.display = "block";
-    }
-  });
-});
-
 //collapsible
 var expand = document.getElementsByClassName("show-section");
 var i;
@@ -72,29 +57,4 @@ function shrinkText() {
     var fontSize = parseFloat(style) / 1.1;
     el.style.fontSize = fontSize + "px";
   });
-}
-
-//image carousal
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
-
-function showDivs(n) {
-  console.log(slideIndex);
-  var i;
-  var imgSlides = document.getElementsByClassName("img-slides");
-  if (n > imgSlides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = imgSlides.length;
-  }
-  for (i = 0; i < imgSlides.length; i++) {
-    imgSlides[i].style.display = "none";
-  }
-  console.log(slideIndex);
-  imgSlides[slideIndex - 1].style.display = "block";
 }
