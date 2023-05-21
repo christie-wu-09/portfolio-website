@@ -18,12 +18,6 @@ function noBackground() {
   document.body.classList.toggle("no-bg");
 }
 
-//menu select
-// const tags = {
-//   fun: ["wagmi", "slyder-fest", "microbe-psychic"],
-//   commercial: ["twitch", "wagmi"],
-// };
-
 //collapsible
 var expand = document.getElementsByClassName("show-section");
 var i;

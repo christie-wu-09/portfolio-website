@@ -1,3 +1,9 @@
+//menu select
+// const tags = {
+//   fun: ["wagmi", "slyder-fest", "microbe-psychic"],
+//   commercial: ["twitch", "wagmi"],
+// };
+
 const select = document.querySelector("#menuSelect");
 
 select.addEventListener("change", (event) => {

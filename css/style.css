@@ -25,6 +25,7 @@ body {
 img,
 video {
   height: auto;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -284,6 +285,8 @@ option {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .gallery-2 img {
@@ -354,8 +357,8 @@ option {
   .side-box {
     position: absolute;
     background-color: #fffefe;
-    top: 30%;
-    right: 5%;
+    top: 35%;
+    right: 3%;
     min-width: 200px;
     max-width: 20vw;
   }
@@ -370,7 +373,7 @@ option {
     position: absolute;
     background-color: #fffefe;
     top: 10%;
-    right: 15%;
+    right: 20%;
     min-width: 200px;
     max-width: 20vw;
   }
