@@ -223,10 +223,6 @@ nav button:nth-child(3) {
   margin: 0;
 }
 
-.menu-block img {
-  height: 35vh;
-}
-
 form {
   display: flex;
   height: 3rem;
@@ -290,11 +286,13 @@ option {
 }
 
 .gallery-2 img {
-  width: 49%;
+  width: 100%;
 }
 
 .gallery-3 {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .image-bleed {
@@ -394,7 +392,9 @@ option {
   .menu-block {
     max-width: 45%;
   }
-
+  .menu-block img {
+    height: 35vh;
+  }
   .section-title {
     display: inline-block;
     margin: 0;
@@ -424,6 +424,10 @@ option {
   .vertical-video {
     padding: 87vh 0 0 0;
     position: relative;
+  }
+
+  .gallery-2 img {
+    width: 49%;
   }
 
   .gallery-3 {
