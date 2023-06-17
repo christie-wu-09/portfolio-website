@@ -395,6 +395,7 @@ option {
   }
   .menu-block img {
     height: 35vh;
+    object-fit: cover;
   }
   .section-title {
     display: inline-block;
