@@ -2,6 +2,10 @@
   pointer-events: none;
 }
 
+.none {
+  display: none;
+}
+
 .flier > * {
   /* Adjust animation duration to change the element’s speed */
   animation: fly 50s linear infinite;
@@ -12,7 +16,7 @@
   position: fixed;
   animation-delay: 1s;
   z-index: 999999;
-  width: 300px;
+  width: 250px;
 }
 
 /* Keyframe values control where the element will begin

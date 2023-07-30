@@ -34,3 +34,9 @@ html {
 .p-2 {
   padding: 1.5rem;
 }
+
+/* display */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}

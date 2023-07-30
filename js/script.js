@@ -16,6 +16,7 @@
 
 function noBackground() {
   document.body.classList.toggle("no-bg");
+  console.log("hide-background");
 }
 
 //collapsible
@@ -51,4 +52,10 @@ function shrinkText() {
     var fontSize = parseFloat(style) / 1.1;
     el.style.fontSize = fontSize + "px";
   });
+}
+
+function showBalloon() {
+  var balloon = document.querySelector(".flier");
+  console.log(balloon);
+  balloon.classList.toggle("none");
 }

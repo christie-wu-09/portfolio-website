@@ -18,7 +18,11 @@ body {
   overflow: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  cursor: url("../images/poof.svg"), auto;
+  cursor: url("../images/cursor.svg"), auto;
+}
+
+a {
+  cursor: url("../images/pointer.svg"), auto;
 }
 
 /* images and videos max out at full width */
@@ -289,6 +293,12 @@ option {
   width: 100%;
 }
 
+.gallery-2-child {
+  width: 100%;
+  padding: 120% 0 0 0;
+  position: relative;
+}
+
 .gallery-3 {
   display: flex;
   flex-wrap: wrap;
@@ -393,7 +403,8 @@ option {
     max-width: 45%;
   }
   .menu-block img {
-    height: 35vh;
+    height: 30vh;
+    width: auto;
     object-fit: cover;
   }
   .section-title {
@@ -429,6 +440,11 @@ option {
 
   .gallery-2 img {
     width: 49%;
+  }
+  .gallery-2-child {
+    width: 49%;
+    padding: 60% 0 0 0;
+    position: relative;
   }
 
   .gallery-3 {
