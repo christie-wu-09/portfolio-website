@@ -21,10 +21,6 @@ body {
   cursor: url("../images/cursor.svg"), auto;
 }
 
-a {
-  cursor: url("../images/pointer.svg"), auto;
-}
-
 /* images and videos max out at full width */
 img,
 video {
