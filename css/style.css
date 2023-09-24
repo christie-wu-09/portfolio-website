@@ -217,10 +217,15 @@ nav button:nth-child(3) {
 
 .menu-block {
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .menu-block h4 {
   margin: 0;
+}
+
+.menu-titles {
+  padding-top: 10px;
 }
 
 form {
@@ -393,16 +398,22 @@ option {
 
   /* MENU PAGE */
   .menu {
-    margin: 30px auto;
+    margin: 30px 10px;
   }
   .menu-block {
-    max-width: 45%;
+    width: auto;
   }
+
   .menu-block img {
     height: 30vh;
-    width: auto;
-    object-fit: cover;
+    /* max-width: 45vw; */
+    object-fit: contain;
   }
+
+  .menu-titles {
+    padding: 10px;
+  }
+
   .section-title {
     display: inline-block;
     margin: 0;
