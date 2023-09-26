@@ -401,7 +401,7 @@ option {
     margin: 30px 10px;
   }
   .menu-block {
-    width: auto;
+    max-width: 30vw;
   }
 
   .menu-block img {
